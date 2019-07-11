@@ -1,5 +1,8 @@
 'use strict';
 
 module.exports = function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+//   let subcollectionB=collectionB[0];
+    return collectionA.filter((element)=>{
+            return collectionB[0].indexOf(element)!= -1;
+    });
 }
